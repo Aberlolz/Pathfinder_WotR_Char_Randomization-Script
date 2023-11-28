@@ -10,9 +10,9 @@ Then, start the main.py file
 
 ## On Windows  
   
-To be honest, not sure, i guess you can doubleclick the file as long as Windows associates .py files with Python3?  
+To be honest, not sure, i guess you can doubleclick the main.py file as long as Windows associates .py files with Python3?  
   
 ## Ubuntu  
 
 Open the Terminal in the Folder with the Script and enter the following  
-    python3 main.py  
+        python3 main.py  
