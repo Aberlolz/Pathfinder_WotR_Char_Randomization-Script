@@ -14,5 +14,5 @@ To be honest, not sure, i guess you can doubleclick the main.py file as long as 
   
 ## Ubuntu  
 
-Open the Terminal in the Folder with the Script and enter the following  
+Open the Terminal in the Directory with the Script and enter the following  
         python3 main.py  
