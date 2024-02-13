@@ -5,7 +5,8 @@ Alchemist_Archetypes =	{
   3: "Chirurgeon",
   4: "Preservationist",
   5: "Metamorph",
-  6: "Incense-Synthesizer",
+  6: "Reanimator",
+  7: "Incense-Synthesizer",
 }
 
 Arcanist_Archetypes =	{
@@ -25,7 +26,8 @@ Barbarian_Archetypes =	{
   3: "Invulnerable-Rager",
   4: "Beastkin-Beserker",
   5: "Pack-Rager",
-  6: "Instinctual-Warrior",
+  6: "Flesheater",
+  7: "Instinctual-Warrior",
 }
 
 Bard_Archetypes =	{
@@ -46,7 +48,8 @@ Bloodrager_Archetypes =	{
   4: "Spelleater",
   5: "Steelblood",
   6: "Mixed-Blood-Rager",
-  7: "Reformed-Fiend",
+  7: "Hag-Riven",
+  8: "Reformed-Fiend",
 }
 
 Cavalier_Archetypes =	{
@@ -57,7 +60,8 @@ Cavalier_Archetypes =	{
   4: "Gendarme",
   5: "Standard-Bearer",
   6: "Fearsome-Leader",
-  7: "Cavalier-of-the-Paw",
+  7: "Ghost-Rider",
+  8: "Cavalier-of-the-Paw",
 }
 
 Cleric_Archetypes =	{
@@ -67,7 +71,8 @@ Cleric_Archetypes =	{
   3: "Herald-Caller",
   4: "Demonbane-Priest",
   5: "Angelfire-Apostle",
-  6: "Priest-of-Balance",
+  6: "Separatist",
+  7: "Priest-of-Balance",
 }
 
 Druid_Archetypes =	{
@@ -77,7 +82,8 @@ Druid_Archetypes =	{
   3: "Defender-of-the-True-World",
   4: "Drovier",
   5: "Elemental-Rampager",
-  6: "Primal-Druid",
+  6: "Winter-Child",
+  7: "Primal-Druid",
 }
 
 Fighter_Archetypes =	{
@@ -97,7 +103,8 @@ Hunter_Archetypes =	{
   3: "Colluding-Scoundrel",
   4: "Forester",
   5: "Wandering-Marksman",
-  6: "Divine-Hound",
+  6: "Tandem-Executioner",
+  7: "Divine-Hound",
 }
 
 Inquisitor_Archetypes =	{
@@ -150,7 +157,8 @@ Oracle_Archetypes = {
   4: "Seeker",
   5: "Possessed-Oracle",
   6: "Wind-Whisperer",
-  7: "Purifier",
+  7: "Dual-Cursed-Oracle",
+  8: "Purifier",
 }
 
 Paladin_Archetypes =	{
@@ -161,7 +169,8 @@ Paladin_Archetypes =	{
   4: "Warrior-of-the-Holy-Light",
   5: "Martyr",
   6: "Divine-Scion",
-  7: "Stonelord",
+  7: "Tortured Crusader",
+  8: "Stonelord",
 }
 
 Ranger_Archetypes =	{
@@ -182,7 +191,8 @@ Rogue_Archetypes =	{
   4: "Sylvan-Trickster",
   5: "Underground-Chemist",
   6: "Rowdy",
-  7: "Master-of-All"
+  7: "Dark-Lurker",
+  8: "Master-of-All"
 }
 
 Shaman_Archetypes =	{
@@ -193,7 +203,8 @@ Shaman_Archetypes =	{
   4: "Unsworn-Shaman",
   5: "Witch-Doctor",
   6: "Shadow-Shaman",
-  7: "Wildland-Shaman",
+  7: "Prophet-Of-Pestilence",
+  8: "Wildland-Shaman",
 }
 
 Skald_Archetypes =	{
@@ -225,7 +236,8 @@ Sorcerer_Archetypes =	{
   4: "Crossblooded",
   5: "Seeker",
   6: "Overwhelming-Mage",
-  7: "Nine-Tailed-Heir",
+  7: "Geomancer",
+  8: "Nine-Tailed-Heir",
 }
 
 Warpriest_Archetypes =	{
@@ -245,6 +257,8 @@ Witch_Archetypes =	{
   3: "Hex-Channeler",
   4: "Ley-Line-Guardian",
   5: "Elemental-Witch",
+  6: "Hag-Of-Gyronna",
+  7: "Witch-Of-The-Veil",
 }
 
 Wizard_Archetypes =	{
@@ -255,7 +269,8 @@ Wizard_Archetypes =	{
   4: "Exploiter-Wizard",
   5: "Elemental-Specialist",
   6: "Spell-Master",
-  7: "Cruoromancer"
+  7: "Shadowcaster",
+  8: "Cruoromancer"
 }
 
 Shifter_Archetypes =	{
@@ -266,5 +281,6 @@ Shifter_Archetypes =	{
   4: "Feyform-Shifter",
   5: "Fiendflesh-Shifter",
   6: "Rageshaper",
-  7: "Wild-Effigy"
+  7: "Weretouched",
+  8: "Wild-Effigy"
 }
