@@ -12,7 +12,7 @@ import archetypes
 #########################WHERE#THE#MAGIC#HAPPENS##############################
 ##############################################################################
 
-# Don't judge my Code please, here's a Dinosaur on a Bycicle.
+#
 #                                                                                                               
 #                                                          --; .!   ??!                                         
 #                                                     :QQQ?>>>???HQQ??Q                                         
@@ -72,131 +72,131 @@ import archetypes
 #                                                                 QH??MHMHM??HMM                                
 #                                                                    MHHHHHMHM7                                 
 
-Pathfinder_Race_RNG = random.randrange(len(races.Pathfinder_Race_Dict))
-Pathfinder_Class_RNG = random.randrange(len(classes.Pathfinder_Class_Dict))
-Pathfinder_Mythic_Path_RNG = random.randrange(len(mythics.Pathfinder_Mythic_Path_Dict))
+PATHFINDER_RACE_RNG = random.randrange(len(races.Pathfinder_Race_Dict))
+PATHFINDER_CLASS_RNG = random.randrange(len(classes.Pathfinder_Class_Dict))
+PATHFINDER_MYTHIC_PATH_RNG = random.randrange(len(mythics.Pathfinder_Mythic_Path_Dict))
 
-print("Race is:\t",races.Pathfinder_Race_Dict[Pathfinder_Race_RNG])
-print("Class is:\t",classes.Pathfinder_Class_Dict[Pathfinder_Class_RNG])
+print("Race is:\t",races.Pathfinder_Race_Dict[PATHFINDER_RACE_RNG])
+print("Class is:\t",classes.Pathfinder_Class_Dict[PATHFINDER_CLASS_RNG])
+def randomizeMe():
+    match PATHFINDER_CLASS_RNG:
+        case 0:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Alchemist_Archetypes))
+            print("Archetype is:\t", archetypes.Alchemist_Archetypes[Pathfinder_Archetype_RNG])
+        case 1:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Arcanist_Archetypes))
+            if PATHFINDER_RACE_RNG != 3:
+                while Pathfinder_Archetype_RNG == len(archetypes.Arcanist_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Arcanist_Archetypes))
+            print("Archetype is:\t", archetypes.Arcanist_Archetypes[Pathfinder_Archetype_RNG])
+        case 2:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Barbarian_Archetypes))
+            print("Archetype is:\t", archetypes.Barbarian_Archetypes[Pathfinder_Archetype_RNG])
+        case 3:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Bard_Archetypes))
+            print("Archetype is:\t", archetypes.Bard_Archetypes[Pathfinder_Archetype_RNG])
+        case 4:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Bloodrager_Archetypes))
+            if PATHFINDER_RACE_RNG != 8:
+                while Pathfinder_Archetype_RNG == len(archetypes.Bloodrager_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Bloodrager_Archetypes))
+            print("Archetype is:\t", archetypes.Bloodrager_Archetypes[Pathfinder_Archetype_RNG])
+        case 5:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Cavalier_Archetypes))
+            if PATHFINDER_RACE_RNG != 4:
+                while Pathfinder_Archetype_RNG == len(archetypes.Cavalier_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Cavalier_Archetypes))
+            print("Archetype is:\t", archetypes.Cavalier_Archetypes[Pathfinder_Archetype_RNG])
+        case 6:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Cleric_Archetypes))
+            print("Archetype is:\t", archetypes.Cleric_Archetypes[Pathfinder_Archetype_RNG])
+        case 7:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Druid_Archetypes))
+            print("Archetype is:\t", archetypes.Druid_Archetypes[Pathfinder_Archetype_RNG])
+        case 8:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Fighter_Archetypes))
+            print("Archetype is:\t", archetypes.Fighter_Archetypes[Pathfinder_Archetype_RNG])
+        case 9:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Hunter_Archetypes))
+            print("Archetype is:\t", archetypes.Hunter_Archetypes[Pathfinder_Archetype_RNG])
+        case 10:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Inquisitor_Archetypes))
+            print("Archetype is:\t", archetypes.Inquisitor_Archetypes[Pathfinder_Archetype_RNG])
+        case 11:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Kineticist_Archetypes))
+            print("Archetype is:\t", archetypes.Kineticist_Archetypes[Pathfinder_Archetype_RNG])
+        case 12:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Magus_Archetypes))
+            if PATHFINDER_RACE_RNG != 1:
+                while Pathfinder_Archetype_RNG == len(archetypes.Magus_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Magus_Archetypes))
+            print("Archetype is:\t", archetypes.Magus_Archetypes[Pathfinder_Archetype_RNG])
+        case 13:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Monk_Archetypes))
+            if PATHFINDER_RACE_RNG != 9:
+                while Pathfinder_Archetype_RNG == len(archetypes.Monk_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Monk_Archetypes))
+            print("Archetype is:\t", archetypes.Monk_Archetypes[Pathfinder_Archetype_RNG])
+        case 14:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Oracle_Archetypes))
+            if PATHFINDER_RACE_RNG != 0:
+                while Pathfinder_Archetype_RNG == len(archetypes.Oracle_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Oracle_Archetypes))
+            print("Archetype is:\t", archetypes.Oracle_Archetypes[Pathfinder_Archetype_RNG])
+        case 15:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Paladin_Archetypes))
+            if PATHFINDER_RACE_RNG != 2:
+                while Pathfinder_Archetype_RNG == len(archetypes.Paladin_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Paladin_Archetypes))
+            print("Archetype is:\t", archetypes.Paladin_Archetypes[Pathfinder_Archetype_RNG])
+        case 16:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Ranger_Archetypes))
+            print("Archetype is:\t", archetypes.Ranger_Archetypes[Pathfinder_Archetype_RNG])
+        case 17:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Rogue_Archetypes))
+            if PATHFINDER_RACE_RNG != 5:
+                while Pathfinder_Archetype_RNG == len(archetypes.Rogue_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Rogue_Archetypes))
+            print("Archetype is:\t", archetypes.Rogue_Archetypes[Pathfinder_Archetype_RNG])
+        case 18:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Shaman_Archetypes))
+            if PATHFINDER_RACE_RNG != 6:
+                while Pathfinder_Archetype_RNG == len(archetypes.Shaman_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Shaman_Archetypes))
+            print("Archetype is:\t", archetypes.Shaman_Archetypes[Pathfinder_Archetype_RNG])
+        case 19:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Skald_Archetypes))
+            print("Archetype is:\t", archetypes.Skald_Archetypes[Pathfinder_Archetype_RNG])
+        case 20:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Slayer_Archetypes))
+            if PATHFINDER_RACE_RNG != 0:
+                while Pathfinder_Archetype_RNG == len(archetypes.Slayer_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Slayer_Archetypes))
+            print("Archetype is:\t", archetypes.Slayer_Archetypes[Pathfinder_Archetype_RNG])
+        case 21:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Sorcerer_Archetypes))
+            if PATHFINDER_RACE_RNG != 11:
+                while Pathfinder_Archetype_RNG == len(archetypes.Sorcerer_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Sorcerer_Archetypes))
+            print("Archetype is:\t", archetypes.Sorcerer_Archetypes[Pathfinder_Archetype_RNG])
+        case 22:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Warpriest_Archetypes))
+            print("Archetype is:\t", archetypes.Warpriest_Archetypes[Pathfinder_Archetype_RNG])
+        case 23:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Witch_Archetypes))
+            print("Archetype is:\t", archetypes.Witch_Archetypes[Pathfinder_Archetype_RNG])
+        case 24:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Wizard_Archetypes))
+            if PATHFINDER_RACE_RNG != 10:
+                while Pathfinder_Archetype_RNG == len(archetypes.Wizard_Archetypes):
+                    Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Wizard_Archetypes))
+            print("Archetype is:\t", archetypes.Wizard_Archetypes[Pathfinder_Archetype_RNG])
+        case 25:
+            Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Shifter_Archetypes))
+            print("Archetype is:\t", archetypes.Shifter_Archetypes[Pathfinder_Archetype_RNG])
+        case _:
+            print("I am Error")
 
-match Pathfinder_Class_RNG:
-    case 0:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Alchemist_Archetypes))
-        print("Archetype is:\t", archetypes.Alchemist_Archetypes[Pathfinder_Archetype_RNG])
-    case 1:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Arcanist_Archetypes))
-        if Pathfinder_Race_RNG != 3:
-            while Pathfinder_Archetype_RNG == len(archetypes.Arcanist_Archetypes):
-               Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Arcanist_Archetypes))
-        print("Archetype is:\t", archetypes.Arcanist_Archetypes[Pathfinder_Archetype_RNG])
-    case 2:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Barbarian_Archetypes))
-        print("Archetype is:\t", archetypes.Barbarian_Archetypes[Pathfinder_Archetype_RNG])
-    case 3:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Bard_Archetypes))
-        print("Archetype is:\t", archetypes.Bard_Archetypes[Pathfinder_Archetype_RNG])
-    case 4:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Bloodrager_Archetypes))
-        if Pathfinder_Race_RNG != 8:
-            while Pathfinder_Archetype_RNG == len(archetypes.Bloodrager_Archetypes):
-              Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Bloodrager_Archetypes))
-        print("Archetype is:\t", archetypes.Bloodrager_Archetypes[Pathfinder_Archetype_RNG])
-    case 5:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Cavalier_Archetypes))
-        if Pathfinder_Race_RNG != 4:
-            while Pathfinder_Archetype_RNG == len(archetypes.Cavalier_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Cavalier_Archetypes))
-        print("Archetype is:\t", archetypes.Cavalier_Archetypes[Pathfinder_Archetype_RNG])
-    case 6:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Cleric_Archetypes))
-        print("Archetype is:\t", archetypes.Cleric_Archetypes[Pathfinder_Archetype_RNG])
-    case 7:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Druid_Archetypes))
-        print("Archetype is:\t", archetypes.Druid_Archetypes[Pathfinder_Archetype_RNG])
-    case 8:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Fighter_Archetypes))
-        print("Archetype is:\t", archetypes.Fighter_Archetypes[Pathfinder_Archetype_RNG])
-    case 9:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Hunter_Archetypes))
-        print("Archetype is:\t", archetypes.Hunter_Archetypes[Pathfinder_Archetype_RNG])
-    case 10:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Inquisitor_Archetypes))
-        print("Archetype is:\t", archetypes.Inquisitor_Archetypes[Pathfinder_Archetype_RNG])
-    case 11:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Kineticist_Archetypes))
-        print("Archetype is:\t", archetypes.Kineticist_Archetypes[Pathfinder_Archetype_RNG])
-    case 12:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Magus_Archetypes))
-        if Pathfinder_Race_RNG != 1:
-            while Pathfinder_Archetype_RNG == len(archetypes.Magus_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Magus_Archetypes))
-        print("Archetype is:\t", archetypes.Magus_Archetypes[Pathfinder_Archetype_RNG])
-    case 13:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Monk_Archetypes))
-        if Pathfinder_Race_RNG != 9:
-            while Pathfinder_Archetype_RNG == len(archetypes.Monk_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Monk_Archetypes))
-        print("Archetype is:\t", archetypes.Monk_Archetypes[Pathfinder_Archetype_RNG])
-    case 14:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Oracle_Archetypes))
-        if Pathfinder_Race_RNG != 0:
-            while Pathfinder_Archetype_RNG == len(archetypes.Oracle_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Oracle_Archetypes))
-        print("Archetype is:\t", archetypes.Oracle_Archetypes[Pathfinder_Archetype_RNG])
-    case 15:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Paladin_Archetypes))
-        if Pathfinder_Race_RNG != 2:
-            while Pathfinder_Archetype_RNG == len(archetypes.Paladin_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Paladin_Archetypes))
-        print("Archetype is:\t", archetypes.Paladin_Archetypes[Pathfinder_Archetype_RNG])
-    case 16:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Ranger_Archetypes))
-        print("Archetype is:\t", archetypes.Ranger_Archetypes[Pathfinder_Archetype_RNG])
-    case 17:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Rogue_Archetypes))
-        if Pathfinder_Race_RNG != 5:
-            while Pathfinder_Archetype_RNG == len(archetypes.Rogue_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Rogue_Archetypes))
-        print("Archetype is:\t", archetypes.Rogue_Archetypes[Pathfinder_Archetype_RNG])
-    case 18:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Shaman_Archetypes))
-        if Pathfinder_Race_RNG != 6:
-            while Pathfinder_Archetype_RNG == len(archetypes.Shaman_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Shaman_Archetypes))
-        print("Archetype is:\t", archetypes.Shaman_Archetypes[Pathfinder_Archetype_RNG])
-    case 19:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Skald_Archetypes))
-        print("Archetype is:\t", archetypes.Skald_Archetypes[Pathfinder_Archetype_RNG])
-    case 20:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Slayer_Archetypes))
-        if Pathfinder_Race_RNG != 0:
-            while Pathfinder_Archetype_RNG == len(archetypes.Slayer_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Slayer_Archetypes))
-        print("Archetype is:\t", archetypes.Slayer_Archetypes[Pathfinder_Archetype_RNG])
-    case 21:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Sorcerer_Archetypes))
-        if Pathfinder_Race_RNG != 11:
-            while Pathfinder_Archetype_RNG == len(archetypes.Sorcerer_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Sorcerer_Archetypes))
-        print("Archetype is:\t", archetypes.Sorcerer_Archetypes[Pathfinder_Archetype_RNG])
-    case 22:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Warpriest_Archetypes))
-        print("Archetype is:\t", archetypes.Warpriest_Archetypes[Pathfinder_Archetype_RNG])
-    case 23:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Witch_Archetypes))
-        print("Archetype is:\t", archetypes.Witch_Archetypes[Pathfinder_Archetype_RNG])
-    case 24:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Wizard_Archetypes))
-        if Pathfinder_Race_RNG != 10:
-            while Pathfinder_Archetype_RNG == len(archetypes.Wizard_Archetypes):
-                Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Wizard_Archetypes))
-        print("Archetype is:\t", archetypes.Wizard_Archetypes[Pathfinder_Archetype_RNG])
-    case 25:
-        Pathfinder_Archetype_RNG = random.randrange(len(archetypes.Shifter_Archetypes))
-        print("Archetype is:\t", archetypes.Shifter_Archetypes[Pathfinder_Archetype_RNG])
-    case _:
-        print("I am Error")
 
-
-print("Mythic Path is:\t",mythics.Pathfinder_Mythic_Path_Dict[Pathfinder_Mythic_Path_RNG])
+print("Mythic Path is:\t",mythics.Pathfinder_Mythic_Path_Dict[PATHFINDER_MYTHIC_PATH_RNG])
 input("Press Enter to Exit...")
